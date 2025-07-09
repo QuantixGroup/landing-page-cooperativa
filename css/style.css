@@ -1,0 +1,32 @@
+:root {
+    --bg-color-primary: #1B4965;
+    --bg-color-secondary: #F6F6F6;
+    --bg-color-tertiary: #FFFDF9;
+
+    --font-title: 'Roboto', sans-serif;
+    --font-title-size: 3rem;
+
+    --font-subtitle: 'Montserrat', sans-serif;
+    --font-subtitle-size: 2.25rem;
+
+    --font-text: 'Aldrich', sans-serif;
+    --font-text-size: 1.5rem;
+}
+
+.font-title {
+    font-family: var(--font-title);
+    font-size: var(--font-title-size);
+    font-weight: 700;
+}
+
+.font-subtitle {
+    font-family: var(--font-subtitle);
+    font-size: var(--font-subtitle-size);
+    font-weight: 600;
+}
+
+.font-text {
+    font-family: var(--font-text);
+    font-size: var(--font-text-size);
+    font-weight: 400;
+}
