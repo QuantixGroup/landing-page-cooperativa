@@ -1,0 +1,48 @@
+.nav-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: rgba(187, 204, 220, 0.8);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+
+.nav-link {
+  color: $bg-color-primary;
+  font-family: $font-subtitle;
+  font-size: 1.125rem;
+  font-weight: 600;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  -webkit-transition: color 0.3s ease, background-color 0.3s ease;
+  -moz-transition: color 0.3s ease, background-color 0.3s ease;
+  -ms-transition: color 0.3s ease, background-color 0.3s ease;
+  -o-transition: color 0.3s ease, background-color 0.3s ease;
+
+&:hover,
+&.active {
+  color: $bg-color-primary;
+  background-color: $bg-color-secondary;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+}
+
+.logo-cooperativa {
+  max-width: 6.25rem;
+  height: auto;
+  margin-left: 1.5rem;
+  margin-top: 2px;
+}
+
+.logo-fucvam {
+  max-width: 15.625rem;
+  height: auto;
+}
