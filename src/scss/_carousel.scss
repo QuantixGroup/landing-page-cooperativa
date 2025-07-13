@@ -1,0 +1,71 @@
+.title-quienes-somos {
+  @include font-title;
+  color: $text-color-primary;
+  text-align: center;
+  margin-bottom: 1rem;
+
+}
+
+.carousel-item h2 {
+  @include font-subtitle;
+  color: $text-color-primary;
+  text-align: center;
+  margin-bottom: 1rem;
+
+}
+
+.carousel-item p {
+  @include font-text;
+  text-align: start;
+  color: $text-color-primary;
+  margin-bottom: 2rem;
+
+}
+
+#quienes-somos {
+
+  @include carousel-styles;
+
+  .carousel-control-prev {
+    left: -5rem;
+  }
+
+  .carousel-control-next {
+    right: -5rem;
+  }
+
+  .carousel-indicators [data-bs-target] {
+    background-color: $bg-color-primary;
+  }
+
+  .carousel-item img {
+    border-radius: 1rem;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  #quienes-somos {
+    .carousel-control-prev {
+      left: -1rem;
+    }
+
+    .carousel-control-next {
+      right: -1rem;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  #quienes-somos {
+    .carousel-control-prev {
+      left: -1rem;
+    }
+
+    .carousel-control-next {
+      right: -1rem;
+    }
+  }
+}

@@ -31,8 +31,10 @@
 }
 
 .nav-link {
-  color: $bg-color-primary;
-  @include typography($font-subtitle, 1.125rem, 600);
+  color: $text-color-primary;
+  font-family: $font-subtitle;
+  font-size: 1.125rem;
+  font-weight: 600;
   transition: color 0.3s ease, background-color 0.3s ease;
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
@@ -47,14 +49,16 @@
 
   &:hover,
   &.active {
-    color: $bg-color-primary;
+    color: $text-color-primary;
     background-color: $bg-color-secondary;
     box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
     cursor: pointer;
   }
 
   @include media-breakpoint-down(sm) {
-    @include typography($font-subtitle, 1rem, 600);
+    font-family: $font-subtitle;
+    font-size: 1rem;
+    font-weight: 600;
     text-align: end;
   }
 

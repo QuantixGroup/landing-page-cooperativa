@@ -3,21 +3,16 @@
   padding: 3rem 0;
 
   .title-info {
-    color: $bg-color-primary;
+    color: $text-color-primary;
     margin-bottom: 1.5rem;
-    @include typography($font-title, 1.8rem, 600);
+    @include font-title;
   }
 
   .text-content {
-    color: $bg-color-primary;
-    @include typography($font-text, 1.4rem, 400);
+    color: $text-color-primary;
+    @include font-text;
     margin-bottom: 2rem;
     line-height: 1.5;
-
-    @include media-breakpoint-down(sm) {
-      @include typography($font-text, 1rem, 400);
-
-    }
   }
 
   .bg-light {
@@ -35,12 +30,11 @@
     border: none;
     background-color: $bg-color-primary;
     color: $bg-color-secondary;
-    @include typography($font-title, 1rem, 600);
+    @include font-text;
     @include button-gradient;
 
     @include media-breakpoint-down(sm) {
       padding: 0.5rem;
-      font-weight: 400;
       margin-bottom: 1.5rem;
     }
   }
