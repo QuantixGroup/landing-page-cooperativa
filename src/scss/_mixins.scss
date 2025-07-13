@@ -1,0 +1,17 @@
+@mixin button-gradient {
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-image: linear-gradient(to top, #1B4965 30%, #3693CB 80%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: $bg-color-secondary;
+    cursor: pointer;
+
+  }
+}
+
+@mixin typography($family, $size, $weight) {
+  font-family: $family;
+  font-size: $size;
+  font-weight: $weight;
+}

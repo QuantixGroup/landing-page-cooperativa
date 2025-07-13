@@ -11854,9 +11854,27 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-body {
-  font-family: "Aldrich", sans-serif;
-  padding-top: 3.75rem;
+.logo-cooperativa {
+  max-width: 6.25rem;
+  height: auto;
+  margin-left: 1.5rem;
+  margin-top: 2px;
+}
+@media (max-width: 575.98px) {
+  .logo-cooperativa {
+    max-width: 5rem;
+    margin-left: 0.5rem;
+  }
+}
+
+.logo-fucvam {
+  max-width: 15.625rem;
+  height: auto;
+}
+@media (max-width: 575.98px) {
+  .logo-fucvam {
+    max-width: 12rem;
+  }
 }
 
 .nav-header {
@@ -11891,18 +11909,22 @@ body {
   color: #1b4965;
   background-color: #f6f6f6;
   box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+@media (max-width: 575.98px) {
+  .nav-link {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: end;
+  }
 }
 
-.logo-cooperativa {
-  max-width: 6.25rem;
-  height: auto;
-  margin-left: 1.5rem;
-  margin-top: 2px;
+.navbar-toggler {
+  border: none;
 }
-
-.logo-fucvam {
-  max-width: 15.625rem;
-  height: auto;
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0.25rem rgba(27, 73, 101, 0.25);
 }
 
 .hero {
@@ -11938,12 +11960,69 @@ body {
 @media (max-width: 575.98px) {
   .hero {
     flex-direction: column;
-    justify-content: center;
-  }
-  .hero .hero-img {
     height: calc(80vh - 3.75rem);
+    justify-content: center;
   }
   .hero h1, .hero .h1 {
     font-size: 1.8rem;
+  }
+}
+
+#cooperativa-info {
+  background-color: #1b4965;
+  padding: 3rem 0;
+}
+#cooperativa-info .title-info {
+  color: #1b4965;
+  margin-bottom: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+#cooperativa-info .text-content {
+  color: #1b4965;
+  font-family: "Aldrich", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+@media (max-width: 575.98px) {
+  #cooperativa-info .text-content {
+    font-family: "Aldrich", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+}
+#cooperativa-info .bg-light {
+  background-color: #f6f6f6;
+  border-radius: 1rem;
+}
+#cooperativa-info .btn-dark {
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: #1b4965;
+  color: #f6f6f6;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+#cooperativa-info .btn-dark:hover {
+  background-image: linear-gradient(to top, #1B4965 30%, #3693CB 80%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #f6f6f6;
+  cursor: pointer;
+}
+@media (max-width: 575.98px) {
+  #cooperativa-info .btn-dark {
+    padding: 0.5rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
   }
 }/*# sourceMappingURL=main.css.map */
