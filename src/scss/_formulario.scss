@@ -1,0 +1,54 @@
+.formulario-container {
+    background-color: $bg-color-secondary;
+    border-radius: 10px;
+
+}
+.title-formulario-contacto {
+    @include font-title;
+    color: $text-color-primary;
+}
+
+#formulario-contacto{
+    background-color: $bg-color-tertiary;
+    
+}
+
+  .form-control, .form-select {
+    background-color: $bg-color-form;
+    border: none;
+
+    &:focus {
+      background-color: $bg-color-form;
+      box-shadow: 0 0 0 0.25rem rgba(27, 73, 101, 0.25);
+      border-color: transparent;
+    }
+  }
+
+.form-label{
+    color: $text-color-primary;
+    @include font-form;
+}
+
+.form-check-input, .form-check-label{
+    @include font-form;
+    color: $text-color-primary;
+}
+
+    .btn-send, .btn-clear {
+    width: fit-content;
+    margin: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: $bg-color-primary;
+    color: $bg-color-secondary;
+    @include font-text;
+    @include button-gradient;
+
+    @include media-breakpoint-down(sm) {
+      padding: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+

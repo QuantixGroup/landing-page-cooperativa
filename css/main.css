@@ -11949,7 +11949,7 @@ textarea.form-control-lg {
   color: #1b4965;
   font-family: "Roboto", sans-serif;
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-right: 5%;
   position: relative;
   -webkit-border-radius: 1rem;
@@ -11957,14 +11957,19 @@ textarea.form-control-lg {
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
 }
-@media (min-width: 768px) {
+@media (max-width: 991.98px) {
   .hero h1, .hero .h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
-@media (min-width: 992px) {
+@media (max-width: 767.98px) {
   .hero h1, .hero .h1 {
-    font-size: 3rem;
+    font-size: 1.75rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .hero h1, .hero .h1 {
+    font-size: 1.5rem;
   }
 }
 @media (max-width: 575.98px) {
@@ -11987,16 +11992,21 @@ textarea.form-control-lg {
   margin-bottom: 1.5rem;
   font-family: "Roboto", sans-serif;
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
-@media (min-width: 768px) {
+@media (max-width: 991.98px) {
   #cooperativa-info .title-info {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
-@media (min-width: 992px) {
+@media (max-width: 767.98px) {
   #cooperativa-info .title-info {
-    font-size: 3rem;
+    font-size: 1.75rem;
+  }
+}
+@media (max-width: 575.98px) {
+  #cooperativa-info .title-info {
+    font-size: 1.5rem;
   }
 }
 #cooperativa-info .text-content {
@@ -12004,20 +12014,30 @@ textarea.form-control-lg {
   font-family: "Aldrich", sans-serif;
   font-weight: 400;
   line-height: 1.6;
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin-bottom: 2rem;
   text-align: left;
 }
-@media (min-width: 992px) {
+@media (max-width: 991.98px) {
   #cooperativa-info .text-content {
-    font-size: 1.125rem;
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 767.98px) {
+  #cooperativa-info .text-content {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 575.98px) {
+  #cooperativa-info .text-content {
+    font-size: 1rem;
   }
 }
 #cooperativa-info .bg-light {
   background-color: #f6f6f6;
   border-radius: 1rem;
 }
-#cooperativa-info .btn-dark {
+#cooperativa-info .btn-formar-parte {
   display: block;
   width: fit-content;
   margin-left: auto;
@@ -12030,22 +12050,32 @@ textarea.form-control-lg {
   font-family: "Aldrich", sans-serif;
   font-weight: 400;
   line-height: 1.6;
-  font-size: 1rem;
+  font-size: 1.5rem;
   transition: all 0.3s ease-in-out;
 }
-@media (min-width: 992px) {
-  #cooperativa-info .btn-dark {
-    font-size: 1.125rem;
+@media (max-width: 991.98px) {
+  #cooperativa-info .btn-formar-parte {
+    font-size: 1.5rem;
   }
 }
-#cooperativa-info .btn-dark:hover {
+@media (max-width: 767.98px) {
+  #cooperativa-info .btn-formar-parte {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 575.98px) {
+  #cooperativa-info .btn-formar-parte {
+    font-size: 1rem;
+  }
+}
+#cooperativa-info .btn-formar-parte:hover {
   background-image: linear-gradient(to top, #1B4965 30%, #3693CB 80%);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   color: #f6f6f6;
   cursor: pointer;
 }
 @media (max-width: 575.98px) {
-  #cooperativa-info .btn-dark {
+  #cooperativa-info .btn-formar-parte {
     padding: 0.5rem;
     margin-bottom: 1.5rem;
   }
@@ -12054,19 +12084,24 @@ textarea.form-control-lg {
 .carousel-item h2, .carousel-item .h2 {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 1.75rem;
+  font-size: 2rem;
   color: #1b4965;
   text-align: center;
   padding: 2rem 0;
 }
-@media (min-width: 768px) {
+@media (max-width: 991.98px) {
   .carousel-item h2, .carousel-item .h2 {
     font-size: 2rem;
   }
 }
-@media (min-width: 992px) {
+@media (max-width: 767.98px) {
   .carousel-item h2, .carousel-item .h2 {
-    font-size: 2.25rem;
+    font-size: 1.75rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .carousel-item h2, .carousel-item .h2 {
+    font-size: 1.5rem;
   }
 }
 
@@ -12074,16 +12109,26 @@ textarea.form-control-lg {
   font-family: "Aldrich", sans-serif;
   font-weight: 400;
   line-height: 1.6;
-  font-size: 1rem;
+  font-size: 1.5rem;
   text-align: start;
   color: #1b4965;
   margin-bottom: 2rem;
   line-height: 1.6;
   padding: 0 2rem;
 }
-@media (min-width: 992px) {
+@media (max-width: 991.98px) {
   .carousel-item p {
-    font-size: 1.125rem;
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .carousel-item p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .carousel-item p {
+    font-size: 1rem;
   }
 }
 
@@ -12101,19 +12146,23 @@ textarea.form-control-lg {
 .title-quienes-somos {
   font-family: "Roboto", sans-serif;
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #1b4965;
-  text-align: center;
   margin-bottom: 1rem;
 }
-@media (min-width: 768px) {
+@media (max-width: 991.98px) {
   .title-quienes-somos {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
-@media (min-width: 992px) {
+@media (max-width: 767.98px) {
   .title-quienes-somos {
-    font-size: 3rem;
+    font-size: 1.75rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .title-quienes-somos {
+    font-size: 1.5rem;
   }
 }
 
@@ -12157,19 +12206,23 @@ textarea.form-control-lg {
 .title-preguntas-frecuentes {
   font-family: "Roboto", sans-serif;
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #f6f6f6;
-  text-align: center;
   margin-bottom: 1rem;
 }
-@media (min-width: 768px) {
+@media (max-width: 991.98px) {
   .title-preguntas-frecuentes {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
-@media (min-width: 992px) {
+@media (max-width: 767.98px) {
   .title-preguntas-frecuentes {
-    font-size: 3rem;
+    font-size: 1.75rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .title-preguntas-frecuentes {
+    font-size: 1.5rem;
   }
 }
 
@@ -12223,5 +12276,133 @@ textarea.form-control-lg {
   #quienes-somos .carousel-control-next,
   #preguntas-frecuentes .carousel-control-next {
     right: -1rem;
+  }
+}
+.formulario-container {
+  background-color: #f6f6f6;
+  border-radius: 10px;
+}
+
+.title-formulario-contacto {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: #1b4965;
+}
+@media (max-width: 991.98px) {
+  .title-formulario-contacto {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .title-formulario-contacto {
+    font-size: 1.75rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .title-formulario-contacto {
+    font-size: 1.5rem;
+  }
+}
+
+#formulario-contacto {
+  background-color: #fffdf9;
+}
+
+.form-control, .form-select {
+  background-color: #E8E8E8;
+  border: none;
+}
+.form-control:focus, .form-select:focus {
+  background-color: #E8E8E8;
+  box-shadow: 0 0 0 0.25rem rgba(27, 73, 101, 0.25);
+  border-color: transparent;
+}
+
+.form-label {
+  color: #1b4965;
+  font-family: "Aldrich", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  font-size: 1.25rem;
+}
+@media (max-width: 991.98px) {
+  .form-label {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .form-label {
+    font-size: 0.75rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .form-label {
+    font-size: 0.75rem;
+  }
+}
+
+.form-check-input, .form-check-label {
+  font-family: "Aldrich", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  font-size: 1.25rem;
+  color: #1b4965;
+}
+@media (max-width: 991.98px) {
+  .form-check-input, .form-check-label {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .form-check-input, .form-check-label {
+    font-size: 0.75rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .form-check-input, .form-check-label {
+    font-size: 0.75rem;
+  }
+}
+
+.btn-send, .btn-clear {
+  width: fit-content;
+  margin: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: #1b4965;
+  color: #f6f6f6;
+  font-family: "Aldrich", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 1.5rem;
+  transition: all 0.3s ease-in-out;
+}
+@media (max-width: 991.98px) {
+  .btn-send, .btn-clear {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .btn-send, .btn-clear {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .btn-send, .btn-clear {
+    font-size: 1rem;
+  }
+}
+.btn-send:hover, .btn-clear:hover {
+  background-image: linear-gradient(to top, #1B4965 30%, #3693CB 80%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #f6f6f6;
+  cursor: pointer;
+}
+@media (max-width: 575.98px) {
+  .btn-send, .btn-clear {
+    padding: 0.5rem;
+    margin-bottom: 1.5rem;
   }
 }/*# sourceMappingURL=main.css.map */
