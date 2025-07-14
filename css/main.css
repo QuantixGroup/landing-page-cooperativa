@@ -12006,7 +12006,7 @@ textarea.form-control-lg {
   line-height: 1.6;
   font-size: 1rem;
   margin-bottom: 2rem;
-  line-height: 1.5;
+  text-align: left;
 }
 @media (min-width: 992px) {
   #cooperativa-info .text-content {
@@ -12051,32 +12051,13 @@ textarea.form-control-lg {
   }
 }
 
-.title-quienes-somos {
-  font-family: "Roboto", sans-serif;
-  font-weight: 600;
-  font-size: 2rem;
-  color: #1b4965;
-  text-align: center;
-  margin-bottom: 1rem;
-}
-@media (min-width: 768px) {
-  .title-quienes-somos {
-    font-size: 2.5rem;
-  }
-}
-@media (min-width: 992px) {
-  .title-quienes-somos {
-    font-size: 3rem;
-  }
-}
-
 .carousel-item h2, .carousel-item .h2 {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 1.75rem;
   color: #1b4965;
   text-align: center;
-  margin-bottom: 1rem;
+  padding: 2rem 0;
 }
 @media (min-width: 768px) {
   .carousel-item h2, .carousel-item .h2 {
@@ -12097,6 +12078,8 @@ textarea.form-control-lg {
   text-align: start;
   color: #1b4965;
   margin-bottom: 2rem;
+  line-height: 1.6;
+  padding: 0 2rem;
 }
 @media (min-width: 992px) {
   .carousel-item p {
@@ -12104,6 +12087,39 @@ textarea.form-control-lg {
   }
 }
 
+.carousel-item img {
+  border-radius: 1rem;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.title-quienes-somos {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  color: #1b4965;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .title-quienes-somos {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .title-quienes-somos {
+    font-size: 3rem;
+  }
+}
+
+#quienes-somos {
+  background-color: #fffdf9;
+}
 #quienes-somos .carousel-control-prev,
 #quienes-somos .carousel-control-next {
   background-color: rgba(27, 73, 101, 0.5);
@@ -12128,26 +12144,84 @@ textarea.form-control-lg {
 #quienes-somos .carousel-indicators [data-bs-target] {
   background-color: #1b4965;
 }
-#quienes-somos .carousel-item img {
+
+#info-quienes-somos-carousel {
+  background-color: #f6f6f6;
   border-radius: 1rem;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.title-preguntas-frecuentes {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  color: #f6f6f6;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .title-preguntas-frecuentes {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .title-preguntas-frecuentes {
+    font-size: 3rem;
+  }
+}
+
+#preguntas-frecuentes {
+  background-color: #1b4965;
+}
+#preguntas-frecuentes .carousel-control-prev,
+#preguntas-frecuentes .carousel-control-next {
+  background-color: rgba(27, 73, 101, 0.5);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.3s ease-in-out;
+}
+#preguntas-frecuentes .carousel-control-prev:hover,
+#preguntas-frecuentes .carousel-control-next:hover {
+  background-image: linear-gradient(to top, #1B4965 30%, #3693CB 80%);
+  transform: translateY(-50%) scale(1.1);
+}
+#preguntas-frecuentes .carousel-control-prev {
+  left: -5rem;
+}
+#preguntas-frecuentes .carousel-control-next {
+  right: -5rem;
+}
+#preguntas-frecuentes .carousel-indicators [data-bs-target] {
+  background-color: #1b4965;
+}
+
+#preguntas-frecuentes-carousel {
+  background-color: #f6f6f6;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+@media (max-width: 767.98px) {
+  #preguntas-frecuentes-carousel {
+    padding: 5rem 0 5rem 0;
+  }
 }
 
 @media (max-width: 767.98px) {
-  #quienes-somos .carousel-control-prev {
+  #quienes-somos .carousel-control-prev,
+  #preguntas-frecuentes .carousel-control-prev {
     left: -1rem;
   }
-  #quienes-somos .carousel-control-next {
-    right: -1rem;
-  }
-}
-@media (max-width: 575.98px) {
-  #quienes-somos .carousel-control-prev {
-    left: -1rem;
-  }
-  #quienes-somos .carousel-control-next {
+  #quienes-somos .carousel-control-next,
+  #preguntas-frecuentes .carousel-control-next {
     right: -1rem;
   }
 }/*# sourceMappingURL=main.css.map */

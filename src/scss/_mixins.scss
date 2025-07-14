@@ -48,8 +48,7 @@
   }
 }
 
-@mixin carousel-styles {
-
+@mixin carousel-styles-control {
   .carousel-control-prev,
   .carousel-control-next {
     background-color: rgba($bg-color-primary, 0.5);
@@ -59,10 +58,27 @@
     top: 50%;
     transform: translateY(-50%);
     transition: all 0.3s ease-in-out;
-
     &:hover {
       background-image: linear-gradient(to top, #1B4965 30%, #3693CB 80%);
       transform: translateY(-50%) scale(1.1);
     }
   }
+  .carousel-control-prev {
+    left: -5rem;
+  }
+  .carousel-control-next {
+    right: -5rem;
+  }
+  .carousel-indicators [data-bs-target] {
+    background-color: $bg-color-primary;
+  }
+}
+
+@mixin carousel-container {
+  background-color: $bg-color-secondary;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
 }
