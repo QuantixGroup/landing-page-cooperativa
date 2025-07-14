@@ -3,12 +3,12 @@
     border-radius: 10px;
 
 }
-.title-formulario-contacto {
+.title-formulario-de-contacto {
     @include font-title;
     color: $text-color-primary;
 }
 
-#formulario-contacto{
+#formulario-de-contacto{
     background-color: $bg-color-tertiary;
     
 }
@@ -42,7 +42,6 @@
     border: none;
     background-color: $bg-color-primary;
     color: $bg-color-secondary;
-    @include font-text;
     @include button-gradient;
 
     @include media-breakpoint-down(sm) {

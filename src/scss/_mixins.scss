@@ -1,10 +1,14 @@
 @mixin button-gradient {
   transition: all 0.3s ease-in-out;
+  font-family: $font-button;
+  font-weight: 400;
+  font-size: 1.2rem;
 
   &:hover {
     background-image: linear-gradient(to top, #1B4965 30%, #3693CB 80%);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     color: $bg-color-secondary;
+    font-size: 1.3rem;
     cursor: pointer;
   }
 }
@@ -43,7 +47,6 @@
   @include media-breakpoint-down(sm) {
     font-size: 1.5rem;
   }
-
 }
 
 @mixin font-text {
@@ -65,8 +68,7 @@
   }
 }
 
-
-@mixin font-form{
+@mixin font-form {
   font-family: $font-form;
   font-weight: 400;
   line-height: 1;
@@ -86,6 +88,7 @@
 }
 
 @mixin carousel-styles-control {
+
   .carousel-control-prev,
   .carousel-control-next {
     background-color: rgba($bg-color-primary, 0.5);
@@ -95,17 +98,21 @@
     top: 50%;
     transform: translateY(-50%);
     transition: all 0.3s ease-in-out;
+
     &:hover {
       background-image: linear-gradient(to top, #1B4965 30%, #3693CB 80%);
       transform: translateY(-50%) scale(1.1);
     }
   }
+
   .carousel-control-prev {
     left: -5rem;
   }
+
   .carousel-control-next {
     right: -5rem;
   }
+
   .carousel-indicators [data-bs-target] {
     background-color: $bg-color-primary;
   }

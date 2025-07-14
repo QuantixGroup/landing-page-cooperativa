@@ -31,7 +31,6 @@
     border: none;
     background-color: $bg-color-primary;
     color: $bg-color-secondary;
-    @include font-text;
     @include button-gradient;
 
     @include media-breakpoint-down(sm) {

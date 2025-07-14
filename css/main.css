@@ -1,4 +1,12 @@
 @charset "UTF-8";
+html {
+  scroll-behavior: smooth;
+}
+
+section[id] {
+  scroll-margin-top: 5rem;
+}
+
 /*!
  * Bootstrap  v5.3.7 (https://getbootstrap.com/)
  * Copyright 2011-2025 The Bootstrap Authors
@@ -11855,7 +11863,7 @@ textarea.form-control-lg {
   }
 }
 .logo-cooperativa {
-  max-width: 6.25rem;
+  max-width: 6rem;
   height: auto;
   margin-left: 1.5rem;
   margin-top: 2px;
@@ -11888,14 +11896,14 @@ textarea.form-control-lg {
   -webkit-backdrop-filter: blur(4px);
 }
 
-.nav-link {
+.nav-pills .nav-link {
   color: #1b4965;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.125rem;
   font-weight: 600;
   transition: color 0.3s ease, background-color 0.3s ease;
   border-radius: 0.5rem;
-  padding: 0.5rem 1rem;
+  margin: 0.5rem;
   -webkit-border-radius: 0.5rem;
   -moz-border-radius: 0.5rem;
   -ms-border-radius: 0.5rem;
@@ -11905,14 +11913,13 @@ textarea.form-control-lg {
   -ms-transition: color 0.3s ease, background-color 0.3s ease;
   -o-transition: color 0.3s ease, background-color 0.3s ease;
 }
-.nav-link:hover, .nav-link.active {
+.nav-pills .nav-link:hover, .nav-pills .nav-link.active {
   color: #1b4965;
   background-color: #f6f6f6;
-  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
 @media (max-width: 575.98px) {
-  .nav-link {
+  .nav-pills .nav-link {
     font-family: "Montserrat", sans-serif;
     font-size: 1rem;
     font-weight: 600;
@@ -12047,31 +12054,16 @@ textarea.form-control-lg {
   border: none;
   background-color: #1b4965;
   color: #f6f6f6;
-  font-family: "Aldrich", sans-serif;
-  font-weight: 400;
-  line-height: 1.6;
-  font-size: 1.5rem;
   transition: all 0.3s ease-in-out;
-}
-@media (max-width: 991.98px) {
-  #cooperativa-info .btn-formar-parte {
-    font-size: 1.5rem;
-  }
-}
-@media (max-width: 767.98px) {
-  #cooperativa-info .btn-formar-parte {
-    font-size: 1rem;
-  }
-}
-@media (max-width: 575.98px) {
-  #cooperativa-info .btn-formar-parte {
-    font-size: 1rem;
-  }
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
 }
 #cooperativa-info .btn-formar-parte:hover {
   background-image: linear-gradient(to top, #1B4965 30%, #3693CB 80%);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   color: #f6f6f6;
+  font-size: 1.3rem;
   cursor: pointer;
 }
 @media (max-width: 575.98px) {
@@ -12148,7 +12140,7 @@ textarea.form-control-lg {
   font-weight: 600;
   font-size: 2.5rem;
   color: #1b4965;
-  margin-bottom: 1rem;
+  margin-top: 2rem;
 }
 @media (max-width: 991.98px) {
   .title-quienes-somos {
@@ -12208,7 +12200,7 @@ textarea.form-control-lg {
   font-weight: 600;
   font-size: 2.5rem;
   color: #f6f6f6;
-  margin-bottom: 1rem;
+  margin-top: 2rem;
 }
 @media (max-width: 991.98px) {
   .title-preguntas-frecuentes {
@@ -12283,29 +12275,29 @@ textarea.form-control-lg {
   border-radius: 10px;
 }
 
-.title-formulario-contacto {
+.title-formulario-de-contacto {
   font-family: "Roboto", sans-serif;
   font-weight: 600;
   font-size: 2.5rem;
   color: #1b4965;
 }
 @media (max-width: 991.98px) {
-  .title-formulario-contacto {
+  .title-formulario-de-contacto {
     font-size: 2rem;
   }
 }
 @media (max-width: 767.98px) {
-  .title-formulario-contacto {
+  .title-formulario-de-contacto {
     font-size: 1.75rem;
   }
 }
 @media (max-width: 575.98px) {
-  .title-formulario-contacto {
+  .title-formulario-de-contacto {
     font-size: 1.5rem;
   }
 }
 
-#formulario-contacto {
+#formulario-de-contacto {
   background-color: #fffdf9;
 }
 
@@ -12373,31 +12365,16 @@ textarea.form-control-lg {
   border: none;
   background-color: #1b4965;
   color: #f6f6f6;
-  font-family: "Aldrich", sans-serif;
-  font-weight: 400;
-  line-height: 1.6;
-  font-size: 1.5rem;
   transition: all 0.3s ease-in-out;
-}
-@media (max-width: 991.98px) {
-  .btn-send, .btn-clear {
-    font-size: 1.5rem;
-  }
-}
-@media (max-width: 767.98px) {
-  .btn-send, .btn-clear {
-    font-size: 1rem;
-  }
-}
-@media (max-width: 575.98px) {
-  .btn-send, .btn-clear {
-    font-size: 1rem;
-  }
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
 }
 .btn-send:hover, .btn-clear:hover {
   background-image: linear-gradient(to top, #1B4965 30%, #3693CB 80%);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   color: #f6f6f6;
+  font-size: 1.3rem;
   cursor: pointer;
 }
 @media (max-width: 575.98px) {

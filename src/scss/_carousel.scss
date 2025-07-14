@@ -30,7 +30,7 @@
 .title-quienes-somos {
   @include font-title;
   color: $text-color-primary;
-  margin-bottom: 1rem;
+  margin-top: 2rem;
 }
 
 #quienes-somos {
@@ -50,7 +50,7 @@
 .title-preguntas-frecuentes {
   @include font-title;
   color: $text-color-secondary;
-  margin-bottom: 1rem;
+    margin-top: 2rem;
 }
 
 #preguntas-frecuentes {
