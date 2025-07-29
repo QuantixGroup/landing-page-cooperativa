@@ -12,7 +12,8 @@ $(document).ready(function () {
             departamento: $("#departamento").val(),
             ciudad: $("#ciudad").val(),
             email: $("#email").val(),
-            contraseña: null , 
+            contraseña: $("#documento").val(),
+
             ingreso_mensual: $("#ingresos").val(),
             situacion_laboral: $("#situacionLaboral option:selected").val(), 
             estado: "pendiente",
