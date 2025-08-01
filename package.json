@@ -1,0 +1,24 @@
+{
+  "name": "landing-page-cooperativa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QuantixGroup/landing-page-cooperativa.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/QuantixGroup/landing-page-cooperativa/issues"
+  },
+  "homepage": "https://github.com/QuantixGroup/landing-page-cooperativa#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.7"
+  }
+}

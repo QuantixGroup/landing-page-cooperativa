@@ -1,0 +1,86 @@
+.carousel-item h2 {
+  @include font-subtitle;
+  color: $text-color-primary;
+  text-align: center;
+  padding: 2rem 0; 
+
+}
+
+.carousel-item p {
+  @include font-text;
+  text-align: start;
+  color: $text-color-primary;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  padding: 0 2rem;
+}
+
+.carousel-item img {
+    border-radius: 1rem;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    
+}
+
+.title-quienes-somos {
+  @include font-title;
+  color: $text-color-primary;
+  margin-top: 2rem;
+}
+
+#quienes-somos {
+ @include carousel-styles-control;
+ background-color: $bg-color-tertiary;
+}
+
+#info-quienes-somos-carousel{
+  background-color: $bg-color-secondary;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.title-preguntas-frecuentes {
+  @include font-title;
+  color: $text-color-secondary;
+    margin-top: 2rem;
+}
+
+#preguntas-frecuentes {
+  @include carousel-styles-control;
+  background-color: $bg-color-primary;
+}
+
+
+#preguntas-frecuentes-carousel{ 
+  background-color: $bg-color-secondary;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem; 
+
+  @include media-breakpoint-down(md) {
+    padding: 5rem 0 5rem 0;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  #quienes-somos,
+  #preguntas-frecuentes {
+    .carousel-control-prev {
+      left: -1rem;
+    }
+
+    .carousel-control-next {
+      right: -1rem;
+    }
+  }
+}

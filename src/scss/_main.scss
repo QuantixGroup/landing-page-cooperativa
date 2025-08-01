@@ -1,0 +1,41 @@
+#cooperativa-info {
+  background-color: $bg-color-primary;
+  padding: 3rem 0;
+
+  .title-info {
+    color: $text-color-primary;
+    margin-bottom: 1.5rem;
+    @include font-title;
+  }
+
+  .text-content {
+    color: $text-color-primary;
+    @include font-text;
+    margin-bottom: 2rem;
+    text-align: left;
+
+  }
+
+  .bg-light {
+    background-color: $bg-color-secondary;
+    border-radius: 1rem;
+  }
+
+  .btn-formar-parte {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: $bg-color-primary;
+    color: $bg-color-secondary;
+    @include button-gradient;
+
+    @include media-breakpoint-down(sm) {
+      padding: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+}

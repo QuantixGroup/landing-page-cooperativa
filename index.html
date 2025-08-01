@@ -1,26 +1,406 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>COVIMT 17</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COVIMT 17</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Aldrich&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/style.css">
-    <script src="src/js/main.js" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Aldrich&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
 
-</body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+<body data-bs-spy="scroll" data-bs-target="#navbarContent" data-bs-offset="120" tabindex="0">
+
+  <header class="nav-header">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="src/img/logo_cooperativa.svg" alt="logo_cooperativa" class="logo-cooperativa">
+          <img src="src/img/logo_fucvam.svg" alt="logo fucvam" class="logo-fucvam">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+          aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav nav-pills ms-auto mb-2 mb-lg-0 text-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#cooperativa-info">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#quienes-somos">¿Quiénes Somos?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#preguntas-frecuentes">Preguntas Frecuentes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#formulario-de-contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+  <main>
+    <section id="hero" class="hero">
+      <img src="src/img/imagen_principal.avif" alt="imagen principal" class="hero-img">
+      <h1>Las cooperativas<br>construyen un<br>mundo mejor</h1>
+    </section>
+    <section id="cooperativa-info" class="py-5">
+      <div class="container">
+        <div class="bg-light p-5 rounded-3">
+          <div class="row mb-4">
+            <div class="col">
+              <h1 class="title-info text-center">¿Qué es una cooperativa de vivienda de ayuda mutua?</h1>
+            </div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <div class="text-content">
+                <p>
+                  Somos una cooperativa de viviendas de ayuda mutua, un modelo solidario donde las personas se organizan
+                  para acceder a su vivienda a través del esfuerzo colectivo.
+                </p>
+                <p>
+                  En lugar de contratar a una empresa constructora, los propios socios participan en la construcción de
+                  sus hogares, trabajando juntos y compartiendo responsabilidades.
+                </p>
+                <p>
+                  Nuestra propuesta busca garantizar el acceso a una vivienda digna, segura y asequible, sin fines de
+                  lucro, con base en la equidad, la participación y el compromiso mutuo.
+                </p>
+              </div>
+              <a href="#contacto" class="btn btn-formar-parte d-block mx-auto mt-4">Quiero unirme</a>
+            </div>
+            <div class="col-md-6 text-center text-md-start">
+              <img src="src/img/edificios.avif" class="img-fluid rounded-5" alt="construcción de edificio">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="quienes-somos" class="py-5">
+      <div class="container">
+        <h1 class=" title-quienes-somos text-center mb-5">¿Quiénes somos?</h1>
+
+        <div id="info-quienes-somos-carousel" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#info-quienes-somos-carousel" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#info-quienes-somos-carousel" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#info-quienes-somos-carousel" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+
+          <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <div class="row align-items-center p-lg-5">
+                <div class="col-md-6 text-content">
+                  <h2>Misión</h2>
+                  <p>Nuestra misión como cooperativa de viviendas es facilitar el acceso a una vivienda digna mediante
+                    el
+                    esfuerzo y la ayuda mutua, promoviendo la inclusión social, la participación y el fortalecimiento
+                    comunitario.</p>
+                </div>
+                <div class="col-md-6">
+                  <img src="src/img/mision.avif" class="d-block w-100" alt="Personas trabajando en equipo">
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row align-items-center p-lg-5">
+                <div class="col-md-6 text-content">
+                  <h2>Visión</h2>
+                  <p>Nuestra visión es ser un referente en la construcción participativa de viviendas, consolidando
+                    comunidades autogestionadas que mejoren la calidad de vida de todos sus integrantes y sirvan de
+                    inspiración para otras iniciativas de ayuda mutua.</p>
+                </div>
+                <div class="col-md-6">
+                  <img src="src/img/vision.avif" class="d-block w-100"
+                    alt="Trabajadores de la construcción revisando planos">
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row align-items-center p-lg-5">
+                <div class="col-md-6 text-content">
+                  <h2>Valores</h2>
+                  <p><strong>Solidaridad:</strong> Base fundamental del trabajo colectivo y la convivencia
+                    cooperativa.<br>
+                    <strong>Ayuda mutua:</strong> Esfuerzo compartido para lograr objetivos comunes.<br>
+                    <strong>Autogestión:</strong> Capacidad de decidir, organizar y ejecutar por parte de los propios
+                    cooperativistas.<br>
+                    <strong>Transparencia:</strong> Gestión clara y accesible para todos los miembros.<br>
+                    <strong>Participación democrática:</strong> Todas las voces cuentan y las decisiones se toman
+                    colectivamente.<br>
+                    <strong>Compromiso social:</strong> Apuesta por una sociedad más justa e inclusiva desde la
+                    vivienda.
+                  </p>
+                </div>
+                <div class="col-md-6">
+                  <img src="src/img/valores.avif" class="d-block w-100"
+                    alt="Trabajadores de la construcción en una obra">
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#info-quienes-somos-carousel"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#info-quienes-somos-carousel"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="preguntas-frecuentes" class="py-5">
+      <div class="container">
+        <h1 class=" title-preguntas-frecuentes text-center mb-5">Preguntas Frecuentes</h1>
+
+        <div id="preguntas-frecuentes-carousel" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#preguntas-frecuentes-carousel" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#preguntas-frecuentes-carousel" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#preguntas-frecuentes-carousel" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#preguntas-frecuentes-carousel" data-bs-slide-to="3"
+              aria-label="Slide 4"></button>
+          </div>
+
+          <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <div class="row align-items-center p-lg-5">
+                <div class="col-md-6 text-content">
+                  <h2>¿Qué es una cooperativa de viviendas de ayuda mutua?</h2>
+                  <p>Es una organización donde los cooperativistas construyen sus propias viviendas trabajando en
+                    conjunto, con
+                    esfuerzo, solidaridad y dedicación junto a otros cooperativistas.<br>
+                    No tiene fines de lucro, por lo que cada cooperativista participa activamente y accede a una
+                    vivienda accesible, digna y construida entre todos.</p>
+                </div>
+                <div class="col-md-6">
+                  <img src="src/img/complejo_viviendas1.avif" class="d-block w-100" alt="Personas trabajando en equipo">
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row align-items-center p-lg-5">
+                <div class="col-md-6 text-content">
+                  <h2>¿Cómo se trabaja en la cooperativa de viviendas de ayudua mutua?</h2>
+                  <p>Los cooperativistas se unen para alcanzar un objetivo común, lograr acceder a una
+                    vivienda digna para sus familias.<br>
+                    Este proceso se basa en la participación colectiva, el esfuerzo
+                    compartido y el compromiso mutuo. <br>
+                    Lo esencial es el trabajo conjunto y el bienestar de cada familia.
+                  </p>
+                </div>
+                <div class="col-md-6">
+                  <img src="src/img/complejo_viviendas2.avif" class="d-block w-100"
+                    alt="Trabajadores de la construcción revisando planos">
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row align-items-center p-lg-5">
+                <div class="col-md-6 text-content">
+                  <h2>Requisitos para ingresar a la cooperativa de viviendas.</h2>
+                  <p>Ser mayor de edad y no poseer otra vivienda a tu nombre.<br>
+                    <strong>Aportes económicos:</strong> Cada integrante debe realizar un contribución de forma previa y
+                    luego mensuales según sus ingresos.<br>
+                    <strong>Ayuda mutua:</strong> Poseer disponibilidad horaria para la construcción y realizar guardias
+                    nocturnas mientras dure el proceso.<br>
+                </div>
+
+                <div class="col-md-6">
+                  <img src="src/img/complejo_viviendas3.avif" class="d-block w-100"
+                    alt="Trabajadores de la construcción en una obra">
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row align-items-center p-lg-5">
+                <div class="col-md-6 text-content">
+                  <h2>Beneficios de ser cooperativa</h2>
+                  <p>Acceder a una vivienda de calidad a cuotas bajas y sin la necesidad de un crédito bancario.<br>
+                    Asesoramiento técnico, legal y organizativo durante todo el proceso de construcción.<br>
+                    Participación activa en la toma de decisiones y en la gestión de la cooperativa.<br>
+                    Acceso a una comunidad solidaria y comprometida con el bienestar de todos sus miembros.</p>
+                </div>
+                <div class="col-md-6">
+                  <img src="src/img/complejo_viviendas4.avif" class="d-block w-100"
+                    alt="Trabajadores de la construcción en una obra">
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#preguntas-frecuentes-carousel"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#preguntas-frecuentes-carousel"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="formulario-de-contacto" class="py-5">
+      <div class="container">
+        <div class="formulario-container p-4 p-md-5 rounded-3">
+
+          <h1 class="title-formulario-de-contacto text-center mb-5">Formulario de Contacto</h1>
+
+          <form id="formulario">
+            <div class="row">
+
+              <div class="col-md-4">
+                <div class="mb-3">
+                  <label for="nombre" class="form-label">Nombre:</label>
+                  <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+                </div>
+                <div class="mb-3">
+                  <label for="apellido" class="form-label">Apellido:</label>
+                  <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido">
+                </div>
+                <div class="mb-3">
+                  <label for="documento" class="form-label">Documento (CI):</label>
+                  <input type="text" class="form-control" id="documento" placeholder="Ingrese su documento">
+                </div>
+                <div class="mb-3">
+                  <label for="fechaNacimiento" class="form-label">Fecha de Nacimiento:</label>
+                  <input type="date" class="form-control" id="fechaNacimiento" placeholder="dd/mm/aaaa">
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email:</label>
+                  <input type="email" class="form-control" id="email" placeholder="Ingrese su email">
+                </div>
+                <div class="mb-3">
+                  <label for="telefono" class="form-label">Teléfono:</label>
+                  <input type="tel" class="form-control" id="telefono" placeholder="Ingrese su teléfono">
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="mb-3">
+                  <label for="departamento" class="form-label">Departamento:</label>
+                  <input type="text" class="form-control" id="departamento" placeholder="Ingrese su departamento">
+                </div>
+                <div class="mb-3">
+                  <label for="ciudad" class="form-label">Ciudad:</label>
+                  <input type="text" class="form-control" id="ciudad" placeholder="Ingrese su ciudad">
+                </div>
+                <div class="mb-3">
+                  <label for="situacionLaboral" class="form-label">Situación Laboral:</label>
+                  <select class="form-select" id="situacionLaboral">
+                    <option selected>Elegir</option>
+                    <option value="Empleado/a">Empleado/a</option>
+                    <option value="Desempleado/a">Desempleado/a</option>
+                    <option value="Independiente">Independiente</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="ingresos" class="form-label">Ingresos Mensuales (Nominal):</label>
+                  <input type="number" class="form-control" id="ingresos" placeholder="Ingrese el monto nominal">
+                </div>
+
+                <div class="mb-3">
+                  <label for="integrantes" class="form-label">Cantidad de Integrantes:</label>
+                  <select class="form-select" id="integrantes">
+                    <option selected>Elegir</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4+</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="mb-3">
+  <label for="direccion" class="form-label">Dirección:</label>
+  <input type="text" class="form-control" id="direccion" placeholder="Ingrese su dirección">
+</div>
+
+
+              <div class="col-md-4">
+                <div class="mb-3">
+                  <label for="mensaje" class="form-label">¿Por qué desea unirse a nuestra cooperativa de
+                    vivienda?</label>
+                  <textarea class="form-control" id="mensaje" rows="6" placeholder="Escriba su mensaje..."></textarea>
+                </div>
+                <img src="src/img/formulario_mujeres.avif" class="img-fluid rounded-3"
+                  alt="Mujeres trabajando en la construcción">
+              </div>
+            </div>
+
+            <div class="row mt-4">
+              <div class="col-12">
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="checkbox" value="" id="terminos">
+                  <label class="form-check-label" for="terminos">
+                    Acepto los términos y condiciones
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="datosPersonales">
+                  <label class="form-check-label" for="datosPersonales">
+                    Autorizo el uso de mis datos personales
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="text-center mt-4">
+              <button type="submit" class="btn btn-send">Enviar</button>
+              <button type="reset" class="btn btn-clear">Limpiar</button>
+            </div>
+            <div id="error" class="text-danger mt-3"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
     crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="js/registroSocio.js"></script>
+
+
+</body>
 
 </html>
