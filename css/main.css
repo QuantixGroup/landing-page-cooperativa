@@ -12021,7 +12021,7 @@ textarea.form-control-lg {
   font-family: "Aldrich", sans-serif;
   font-weight: 400;
   line-height: 1.6;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   margin-bottom: 2rem;
   text-align: left;
 }
@@ -12104,7 +12104,7 @@ textarea.form-control-lg {
   font-family: "Aldrich", sans-serif;
   font-weight: 400;
   line-height: 1.6;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   text-align: start;
   color: #1b4965;
   margin-bottom: 2rem;
@@ -12304,11 +12304,14 @@ textarea.form-control-lg {
   background-color: #fffdf9;
 }
 
-.form-control, .form-select {
+.form-control,
+.form-select {
   background-color: #E8E8E8;
   border: none;
+  font-size: 0.95rem;
 }
-.form-control:focus, .form-select:focus {
+.form-control:focus,
+.form-select:focus {
   background-color: #E8E8E8;
   box-shadow: 0 0 0 0.25rem rgba(27, 73, 101, 0.25);
   border-color: transparent;
@@ -12316,10 +12319,12 @@ textarea.form-control-lg {
 
 .form-label {
   color: #1b4965;
-  font-family: "Aldrich", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
-  line-height: 1;
-  font-size: 1.25rem;
+  line-height: 1rem;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
 }
 @media (max-width: 991.98px) {
   .form-label {
@@ -12328,39 +12333,47 @@ textarea.form-control-lg {
 }
 @media (max-width: 767.98px) {
   .form-label {
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
 }
 @media (max-width: 575.98px) {
   .form-label {
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
 }
+.form-label.message {
+  line-height: 1.5;
+}
 
-.form-check-input, .form-check-label {
-  font-family: "Aldrich", sans-serif;
+.form-check-input,
+.form-check-label {
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
-  line-height: 1;
-  font-size: 1.25rem;
+  line-height: 1rem;
+  font-size: 1.2rem;
   color: #1b4965;
 }
 @media (max-width: 991.98px) {
-  .form-check-input, .form-check-label {
+  .form-check-input,
+  .form-check-label {
     font-size: 1rem;
   }
 }
 @media (max-width: 767.98px) {
-  .form-check-input, .form-check-label {
-    font-size: 0.75rem;
+  .form-check-input,
+  .form-check-label {
+    font-size: 1rem;
   }
 }
 @media (max-width: 575.98px) {
-  .form-check-input, .form-check-label {
-    font-size: 0.75rem;
+  .form-check-input,
+  .form-check-label {
+    font-size: 1rem;
   }
 }
 
-.btn-send, .btn-clear {
+.btn-send,
+.btn-clear {
   width: fit-content;
   margin: 0.5rem;
   padding: 0.5rem 1.5rem;
@@ -12373,7 +12386,8 @@ textarea.form-control-lg {
   font-weight: 400;
   font-size: 1.2rem;
 }
-.btn-send:hover, .btn-clear:hover {
+.btn-send:hover,
+.btn-clear:hover {
   background-image: linear-gradient(to top, #1B4965 30%, #3693CB 80%);
   color: #f6f6f6;
   transform: translateY(-2px);
@@ -12384,7 +12398,8 @@ textarea.form-control-lg {
   -o-transform: translateY(-2px);
 }
 @media (max-width: 575.98px) {
-  .btn-send, .btn-clear {
+  .btn-send,
+  .btn-clear {
     padding: 0.5rem;
     margin-bottom: 1.5rem;
   }
@@ -12393,7 +12408,7 @@ textarea.form-control-lg {
 .footer-container {
   background-color: #fffdf9;
   color: #1b4965;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   line-height: 1.6;
   font-size: 16px;
