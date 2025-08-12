@@ -129,3 +129,22 @@
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
 }
+
+@mixin font-footer{
+  font-family: $font-footer;
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 16px;
+
+  @include media-breakpoint-down(lg) {
+    font-size: 14px;
+  }
+
+  @include media-breakpoint-down(md) {
+    font-size: 12px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    font-size: 12px;
+  }
+}
