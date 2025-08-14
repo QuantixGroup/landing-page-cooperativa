@@ -372,14 +372,73 @@
                 <div class="form-check mb-2">
                   <input class="form-check-input" type="checkbox" value="" id="terminos">
                   <label class="form-check-label" for="terminos">
-                    Acepto los términos y condiciones
+                    He leído y acepto los términos y condiciones
                   </label>
                 </div>
+                <div class="modal fade" id="terminosModal" tabindex="-1" aria-labelledby="terminosModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="terminosModalLabel">Términos y Condiciones</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <p>
+                          Al completar este formulario, usted acepta participar en el proceso de postulación a la
+                          cooperativa de vivienda de ayuda mutua COVIMT 17. Este proceso <span class="fw-bold">no
+                            garantiza el ingreso automático</span>, sino que está sujeto
+                          a evaluación por parte del equipo administrativo.
+                        <p>
+                          La participación en la cooperativa implica el <span class="fw-bold">compromiso
+                            con las tareas de ayuda mutua, la asistencia a reuniones y el cumplimiento de los
+                            reglamentos internos establecidos</span>.
+                          Nos reservamos el derecho de <span class="fw-bold">rechazar postulaciones</span>
+                          que no cumplan con los requisitos básicos de ingreso o que presenten información incompleta o
+                          falsa.
+                        </p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-send" data-bs-dismiss="modal">Cerrar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
                 <div class="form-check">
                   <input class="form-check-input" type="checkbox" value="" id="datosPersonales">
                   <label class="form-check-label" for="datosPersonales">
-                    Autorizo el uso de mis datos personales
+                    Política de Protección de Datos Personales
                   </label>
+                  <div class="modal fade" id="datosPersonalesModal" tabindex="-1"
+                    aria-labelledby="datosPersonalesModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="datosPersonalesModalLabel">Política de Protección de Datos
+                            Personales</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <p>
+                            La información personal recolectada a través de este formulario <span class="fw-bold">será
+                              utilizada
+                              exclusivamente para fines administrativos</span> y de evaluación en el marco del proceso
+                            de
+                            postulación a la cooperativa.</p>
+                          <p>
+                            Nos comprometemos a proteger sus datos conforme a la <span class="fw-bold">Ley N.º 18.331 de
+                              Protección de Datos
+                              Personales</span> y a no compartir su información con terceros sin su consentimiento
+                            expreso.
+                          </p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-send" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -388,7 +447,7 @@
               <button type="reset" class="btn btn-clear">Limpiar</button>
               <button type="submit" class="btn btn-send">Enviar</button>
             </div>
-            <div id="error" class="text-danger mt-3"></div>
+            <div id="error" class="alert alert-danger mt-3"></div>
           </form>
         </div>
       </div>
@@ -418,11 +477,15 @@
   </footer>
 
 
+
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
     crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
   <script src="js/registroSocio.js"></script>
+  <script src="js/terminosCondiciones.js"></script>
+  <script src="js/usoDatosPersonales.js"></script>
 
 
 </body>
