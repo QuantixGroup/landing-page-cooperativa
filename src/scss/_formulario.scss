@@ -33,12 +33,10 @@
   margin-bottom: 0.5rem;
   margin-top: 1rem;
 
-  &.message{
+  &.message {
     line-height: 1.5;
   }
 }
-
-
 
 .form-check-input,
 .form-check-label {
@@ -61,4 +59,8 @@
     padding: 0.5rem;
     margin-bottom: 1.5rem;
   }
+}
+
+.img-form {
+  box-shadow: 0 12px 36px 0 rgba(27, 73, 101, 0.28), 0 4px 16px 0 rgba(0, 0, 0, 0.18);
 }

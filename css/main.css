@@ -11994,7 +11994,8 @@ textarea.form-control-lg {
   background-color: #1b4965;
   padding: 3rem 0;
 }
-#cooperativa-info .title-info {
+
+.title-info {
   color: #1b4965;
   margin-bottom: 1.5rem;
   font-family: "Roboto", sans-serif;
@@ -12002,21 +12003,22 @@ textarea.form-control-lg {
   font-size: 2.5rem;
 }
 @media (max-width: 991.98px) {
-  #cooperativa-info .title-info {
+  .title-info {
     font-size: 2rem;
   }
 }
 @media (max-width: 767.98px) {
-  #cooperativa-info .title-info {
+  .title-info {
     font-size: 1.75rem;
   }
 }
 @media (max-width: 575.98px) {
-  #cooperativa-info .title-info {
+  .title-info {
     font-size: 1.5rem;
   }
 }
-#cooperativa-info .text-content {
+
+.text-content {
   color: #1b4965;
   font-family: "Aldrich", sans-serif;
   font-weight: 400;
@@ -12026,25 +12028,27 @@ textarea.form-control-lg {
   text-align: left;
 }
 @media (max-width: 991.98px) {
-  #cooperativa-info .text-content {
+  .text-content {
     font-size: 1.5rem;
   }
 }
 @media (max-width: 767.98px) {
-  #cooperativa-info .text-content {
+  .text-content {
     font-size: 1rem;
   }
 }
 @media (max-width: 575.98px) {
-  #cooperativa-info .text-content {
+  .text-content {
     font-size: 1rem;
   }
 }
-#cooperativa-info .bg-light {
+
+.bg-light {
   background-color: #f6f6f6;
   border-radius: 1rem;
 }
-#cooperativa-info .btn-formar-parte {
+
+.btn-formar-parte {
   display: block;
   width: fit-content;
   margin-left: auto;
@@ -12059,7 +12063,7 @@ textarea.form-control-lg {
   font-weight: 400;
   font-size: 1.2rem;
 }
-#cooperativa-info .btn-formar-parte:hover {
+.btn-formar-parte:hover {
   background-image: linear-gradient(to top, #1B4965 30%, #3693CB 80%);
   color: #f6f6f6;
   transform: translateY(-2px);
@@ -12070,7 +12074,7 @@ textarea.form-control-lg {
   -o-transform: translateY(-2px);
 }
 @media (max-width: 575.98px) {
-  #cooperativa-info .btn-formar-parte {
+  .btn-formar-parte {
     padding: 0.5rem;
     margin-bottom: 1.5rem;
   }
@@ -12136,6 +12140,7 @@ textarea.form-control-lg {
   -moz-border-radius: 1rem;
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
+  box-shadow: 0 12px 36px 0 rgba(27, 73, 101, 0.28), 0 4px 16px 0 rgba(0, 0, 0, 0.18);
 }
 
 .title-quienes-somos {
@@ -12403,6 +12408,10 @@ textarea.form-control-lg {
     padding: 0.5rem;
     margin-bottom: 1.5rem;
   }
+}
+
+.img-form {
+  box-shadow: 0 12px 36px 0 rgba(27, 73, 101, 0.28), 0 4px 16px 0 rgba(0, 0, 0, 0.18);
 }
 
 .footer-container {
