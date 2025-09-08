@@ -1,9 +1,12 @@
+
 $(document).ready(function () {
-  $("#formulario").submit(function (e) {
-    e.preventDefault();
+
+  $("#formulario").on("submit", function (evento) {
+    evento.preventDefault();
 
     var terminos = $("#terminos").is(":checked");
     var datosPersonales = $("#datosPersonales").is(":checked");
+
     if (!terminos || !datosPersonales) {
       mostrarAlerta(
         "Para continuar, debe aceptar los términos y condiciones y autorizar el uso de sus datos personales.",
@@ -12,47 +15,44 @@ $(document).ready(function () {
       return;
     }
 
-    var data = {
-      cedula: $("#documento").val(),
-      nombre: $("#nombre").val(),
-      apellido: $("#apellido").val(),
-      fecha_nacimiento: $("#fechaNacimiento").val(),
-      telefono: $("#telefono").val(),
-      direccion: $("#direccion").val(),
-      departamento: $("#departamento").val(),
-      ciudad: $("#ciudad").val(),
-      email: $("#email").val(),
-      contraseña: $("#documento").val(),
+        const datos = {
+            cedula: $("#documento").val().trim(),
+            nombre: $("#nombre").val().trim(),
+            apellido: $("#apellido").val().trim(),
+            fecha_nacimiento: $("#fechaNacimiento").val(),
+            telefono: $("#telefono").val().trim(),
+            direccion: $("#direccion").val().trim(),
+            departamento: $("#departamento").val().trim(),
+            ciudad: $("#ciudad").val().trim(),
+            email: $("#email").val().trim(),
+            ingreso_mensual: $("#ingresos").val(),
+            situacion_laboral: $("#situacionLaboral").val(),
+            integrantes_familiares: $("#integrantes").val(),
+            mensaje: $("#mensaje").val()
+        };
 
-      ingreso_mensual: $("#ingresos").val(),
-      situacion_laboral: $("#situacionLaboral option:selected").val(),
-      estado: "pendiente",
-      integrantes_familiares: $("#integrantes").val(),
-      fecha_ingreso: null,
-      fecha_egreso: null,
-    };
-
-    $.ajax({
-      url: "http://localhost:8000/api/socios",
-      type: "POST",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-      data: JSON.stringify(data),
-      success: function (response) {
-        mostrarAlerta("Formulario enviado correctamente", "success");
-        console.log(response);
-        $("#formulario")[0].reset();
-        $("#terminos").prop("checked", false);
-        $("#datosPersonales").prop("checked", false);
-      },
-      error: function (xhr) {
-        console.error("Error:", xhr.responseText);
-        mostrarAlerta("No se pudo enviar el formulario", "danger");
-      },
+        $.ajax({
+            url: API_USUARIOS + "/socios",
+            method: "POST",
+            contentType: "application/json",
+            data: JSON.stringify(datos),
+            success: function () {
+                mostrarMensaje("Solicitud enviada con éxito");
+                $("#formulario")[0].reset();
+                $("#terminos").prop("checked", false);
+                $("#datosPersonales").prop("checked", false);
+            },
+            error: function (xhr) {
+                const respuesta = xhr.responseJSON || {};
+                mostrarMensaje("No se pudo enviar la solicitud" + (respuesta.message ? `: ${respuesta.message}` : ""), true);
+            }
+        });
     });
-  });
+
+    function mostrarMensaje(texto, esError = false) {
+        $("#mensaje-landing").text(texto).css("color", esError ? "red" : "green");
+    }
+
 });
 
 function mostrarAlerta(mensaje, tipo = "success") {
