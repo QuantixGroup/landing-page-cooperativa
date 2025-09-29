@@ -337,7 +337,8 @@
                 </div>
                 <div class="mb-3">
                   <label for="ingresos" class="form-label">Ingresos Mensuales (Nominal):</label>
-                  <input type="number" class="form-control" id="ingresos" placeholder="Ingrese el monto nominal">
+                  <input type="text" inputmode="numeric" class="form-control" id="ingresos"
+                    placeholder="Ingrese el monto nominal">
                 </div>
 
                 <div class="mb-3">
@@ -372,16 +373,16 @@
                 <div class="form-check mb-2">
                   <input class="form-check-input" type="checkbox" value="" id="terminos">
                   <label class="form-check-label" for="terminos">
-                    He leído y acepto los términos y condiciones
+                    <span class="open-modal-text" data-target="#terminosModal" tabindex="0" role="button">He leído y
+                      acepto los términos y condiciones</span>
                   </label>
                 </div>
                 <div class="modal fade" id="terminosModal" tabindex="-1" aria-labelledby="terminosModalLabel"
-                  aria-hidden="true">
-                  <div class="modal-dialog">
+                  aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+                  <div class="modal-dialog modal-dialog-scrollable">
                     <div class="modal-content">
                       <div class="modal-header">
                         <h5 class="modal-title" id="terminosModalLabel">Términos y Condiciones</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
                       <div class="modal-body">
                         <p>
@@ -399,7 +400,7 @@
                         </p>
                       </div>
                       <div class="modal-footer">
-                        <button type="button" class="btn btn-send" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" id="aceptoTerminos" class="btn btn-send">Acepto</button>
                       </div>
                     </div>
                   </div>
@@ -408,16 +409,17 @@
                 <div class="form-check">
                   <input class="form-check-input" type="checkbox" value="" id="datosPersonales">
                   <label class="form-check-label" for="datosPersonales">
-                    Política de Protección de Datos Personales
+                    <span class="open-modal-text" data-target="#datosPersonalesModal" tabindex="0"
+                      role="button">Política de Protección de Datos Personales</span>
                   </label>
                   <div class="modal fade" id="datosPersonalesModal" tabindex="-1"
-                    aria-labelledby="datosPersonalesModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
+                    aria-labelledby="datosPersonalesModalLabel" aria-hidden="true" data-bs-backdrop="static"
+                    data-bs-keyboard="false">
+                    <div class="modal-dialog modal-dialog-scrollable">
                       <div class="modal-content">
                         <div class="modal-header">
                           <h5 class="modal-title" id="datosPersonalesModalLabel">Política de Protección de Datos
                             Personales</h5>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
                           <p>
@@ -434,7 +436,7 @@
                           </p>
                         </div>
                         <div class="modal-footer">
-                          <button type="button" class="btn btn-send" data-bs-dismiss="modal">Cerrar</button>
+                          <button type="button" id="aceptoDatosPersonales" class="btn btn-send">Acepto</button>
                         </div>
                       </div>
                     </div>
