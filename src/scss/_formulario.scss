@@ -1,34 +1,67 @@
 .formulario-container {
-  background-color: $bg-color-secondary;
+
   border-radius: 10px;
 
+  html[data-bs-theme="light"] & {
+    background-color: $bg-color-secondary;
+  }
+
+  html[data-bs-theme="dark"] & {
+    background-color: $bg-color-primary-dark;
+  }
 }
 
 .title-formulario-de-contacto {
   @include font-title;
-  color: $text-color-primary;
+
+
+  html[data-bs-theme="light"] & {
+    color: $text-color-primary;
+  }
+
+  html[data-bs-theme="dark"] & {
+    color: $text-color-primary-dark;
+  }
 }
 
 #formulario-de-contacto {
-  background-color: $bg-color-tertiary;
 
+
+  html[data-bs-theme="light"] & {
+    background-color: $bg-color-tertiary;
+  }
+
+  html[data-bs-theme="dark"] & {
+    background-color: $bg-color-secondary-dark;
+  }
 }
 
 .form-control,
 .form-select {
-  background-color: $bg-color-form;
+
   border: none;
   font-size: 0.95rem;
 
-  &:focus {
+  html[data-bs-theme="light"] & {
     background-color: $bg-color-form;
+    color: $text-color-primary;
+  }
+
+  html[data-bs-theme="dark"] & {
+    background-color: $bg-color-form;
+    color: $text-color-secondary-dark;
+  }
+
+  &:focus {
+
     box-shadow: 0 0 0 0.25rem rgba(27, 73, 101, 0.25);
     border-color: transparent;
+
   }
 }
 
 .form-label {
-  color: $text-color-primary;
+
   @include font-form;
   margin-bottom: 0.5rem;
   margin-top: 1rem;
@@ -36,7 +69,28 @@
   &.message {
     line-height: 1.5;
   }
+
+  html[data-bs-theme="light"] & {
+    color: $text-color-primary;
+  }
+
+  html[data-bs-theme="dark"] & {
+    color: $text-color-secondary-dark;
+  }
 }
+
+label.form-label {
+  @include font-form;
+
+  html[data-bs-theme="light"] & {
+    color: $text-color-primary;
+  }
+
+  html[data-bs-theme="dark"] & {
+    color: $text-color-primary-dark;
+  }
+}
+
 
 .form-check-input,
 .form-check-label {
@@ -51,9 +105,18 @@
   padding: 0.5rem 1.5rem;
   border-radius: 0.5rem;
   border: none;
-  background-color: $bg-color-primary;
-  color: $bg-color-secondary;
-  @include button-gradient;
+
+  html[data-bs-theme="light"] & {
+    background-color: $bg-color-primary;
+    color: $bg-color-secondary;
+    @include button-gradient;
+  }
+
+  html[data-bs-theme="dark"] & {
+    background-color: $bg-color-tertiary-dark;
+    color: $text-color-secondary-dark;
+    @include button-gradient-dark;
+  }
 
   @include media-breakpoint-down(sm) {
     padding: 0.5rem;
@@ -67,4 +130,52 @@
 
 #error {
   display: none;
+}
+
+.open-modal-text {
+  cursor: pointer;
+  text-decoration: underline;
+
+  html[data-bs-theme="light"] & {
+    color: $text-color-primary;
+  }
+
+  html[data-bs-theme="dark"] & {
+    color: $text-color-primary-dark;
+  }
+}
+
+.form-check-input {
+  border: none;
+
+  html[data-bs-theme="light"] & {
+    background-color: $bg-color-primary;
+  }
+
+  html[data-bs-theme="dark"] & {
+    background-color: $bg-color-primary-dark;
+    box-shadow: 0 0 0 0.12rem rgba(255, 255, 255, 0.06) inset;
+  }
+}
+
+.form-check-label {
+  html[data-bs-theme="light"] & {
+    color: $text-color-primary;
+  }
+
+  html[data-bs-theme="dark"] & {
+    color: $text-color-secondary-dark;
+  }
+}
+
+#formulario label.form-label {
+  @include font-form;
+
+  html[data-bs-theme="light"] & {
+    color: $text-color-primary;
+  }
+
+  html[data-bs-theme="dark"] & {
+    color: $text-color-primary-dark;
+  }
 }

@@ -1,23 +1,33 @@
-  $bg-color-primary: #1b4965;
-  $bg-color-secondary: #f6f6f6;
-  $bg-color-tertiary: #fffdf9;
-  $bg-color-form: #E8E8E8;
+$bg-color-primary: #1b4965;
+$bg-color-secondary: #f6f6f6;
+$bg-color-tertiary: #fffdf9;
+$bg-color-form: #E8E8E8;
 
-  $text-color-primary: #1b4965;
-  $text-color-secondary: #f6f6f6;
+$text-color-primary: #1b4965;
+$text-color-secondary: #f6f6f6;
+$text-color-tertiary: #fffdf9;
 
-  $font-navbar: "Roboto", sans-serif;
-  $font-title: "Roboto", sans-serif;
-  $font-subtitle: "Montserrat", sans-serif;
-  $font-text: "Aldrich", sans-serif;
-  $font-form: "Roboto", sans-serif;
-  $font-button: "Roboto", sans-serif;
-  $font-footer: "Montserrat", sans-serif;
+$primary: $bg-color-primary;
+$secondary: $bg-color-secondary;
+$tertiary: $bg-color-tertiary;
+
+$bg-color-primary-dark: #0f2633;
+$bg-color-secondary-dark: #0b3948;
+$bg-color-tertiary-dark: #f6f6f6;
+$bg-color-form-fourth-dark: #fffdf9;
+$bg-color-form-dark: #E8E8E8;
+
+$text-color-primary-dark: #f6f6f6;
+$text-color-secondary-dark: #1b4965;
+$text-color-tertiary-dark: #fffdf9;
 
 
-  $header-height: 3.75rem;
+$font-navbar: "Roboto", sans-serif;
+$font-title: "Roboto", sans-serif;
+$font-subtitle: "Montserrat", sans-serif;
+$font-text: "Montserrat", sans-serif;
+$font-form: "Roboto", sans-serif;
+$font-button: "Roboto", sans-serif;
+$font-footer: "Montserrat", sans-serif;
 
-  $primary: $bg-color-primary;
-  $secondary: $bg-color-secondary;
-  $tertiary: $bg-color-tertiary;
-
+$header-height: 3.75rem;

@@ -15,17 +15,22 @@
   }
 
   h1 {
-    background-color: rgba(246, 246, 246, 0.65);
     padding: 1.5rem 2.5rem;
     border-radius: 1rem;
     color: $text-color-primary;
     @include font-title;
     margin-right: 5%;
     position: relative;
-    -webkit-border-radius: 1rem;
-    -moz-border-radius: 1rem;
-    -ms-border-radius: 1rem;
-    -o-border-radius: 1rem;
+
+
+    html[data-bs-theme="light"] & {
+      background-color: rgba(246, 246, 246, 0.65);
+    }
+
+    html[data-bs-theme="dark"] & {
+      background-color: rgba(27, 73, 101, 0.65);
+      color: $text-color-tertiary-dark;
+    }
   }
 
   @include media-breakpoint-down(sm) {

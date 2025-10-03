@@ -1,5 +1,28 @@
-.footer-container{
+.footer-container {
     background-color: $bg-color-tertiary;
     color: $text-color-primary;
     @include font-footer;
+
+    html[data-bs-theme="light"] & {
+        background-color: $bg-color-tertiary;
+        color: $text-color-primary;
+    }
+
+    html[data-bs-theme="dark"] & {
+        background-color: $bg-color-primary-dark;
+        color: $text-color-primary-dark;
+    }
+}
+
+p a {
+    text-decoration: none;
+    font-weight: bold;
+
+    html[data-bs-theme="light"] & {
+        color: $text-color-primary;
+    }
+
+    html[data-bs-theme="dark"] & {
+        color: $text-color-primary-dark;
+    }
 }

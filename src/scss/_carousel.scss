@@ -1,18 +1,31 @@
 .carousel-item h2 {
   @include font-subtitle;
-  color: $text-color-primary;
   text-align: center;
   padding: 2rem 0;
 
+  html[data-bs-theme="light"] & {
+    color: $text-color-primary;
+  }
+
+  html[data-bs-theme="dark"] & {
+    color: $text-color-primary-dark;
+  }
 }
 
 .carousel-item p {
   @include font-text;
   text-align: start;
-  color: $text-color-primary;
   margin-bottom: 2rem;
   line-height: 1.6;
   padding: 0 2rem;
+
+  html[data-bs-theme="light"] & {
+    color: $text-color-primary;
+  }
+
+  html[data-bs-theme="dark"] & {
+    color: $text-color-primary-dark;
+  }
 }
 
 .carousel-item img {
@@ -26,47 +39,93 @@
   -o-border-radius: 1rem;
   box-shadow: 0 12px 36px 0 rgba(27, 73, 101, 0.28), 0 4px 16px 0 rgba(0, 0, 0, 0.18);
 
+  html[data-bs-theme="dark"] & {
+    box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.55), 0 4px 12px 0 rgba(0, 0, 0, 0.35);
+    filter: brightness(0.95) contrast(1.05);
+  }
 }
 
 .title-quienes-somos {
   @include font-title;
-  color: $text-color-primary;
   margin-top: 2rem;
+
+  html[data-bs-theme="light"] & {
+    color: $text-color-primary;
+  }
+
+  html[data-bs-theme="dark"] & {
+    color: $text-color-primary-dark;
+  }
 }
 
 #quienes-somos {
   @include carousel-styles-control;
-  background-color: $bg-color-tertiary;
+
+  html[data-bs-theme="light"] & {
+    background-color: $bg-color-tertiary;
+  }
+
+  html[data-bs-theme="dark"] & {
+    background-color: $bg-color-secondary-dark
+  }
 }
 
 #info-quienes-somos-carousel {
-  background-color: $bg-color-secondary;
   border-radius: 1rem;
   -webkit-border-radius: 1rem;
   -moz-border-radius: 1rem;
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
+
+  html[data-bs-theme="light"] & {
+    background-color: $bg-color-secondary;
+  }
+
+  html[data-bs-theme="dark"] & {
+    background-color: $bg-color-primary-dark;
+  }
 }
 
 .title-preguntas-frecuentes {
   @include font-title;
-  color: $text-color-secondary;
+
   margin-top: 2rem;
+
+  html[data-bs-theme="light"] & {
+    color: $text-color-secondary;
+  }
+
+  html[data-bs-theme="dark"] & {
+    color: $text-color-tertiary-dark;
+  }
 }
 
 #preguntas-frecuentes {
   @include carousel-styles-control;
-  background-color: $bg-color-primary;
+
+  html[data-bs-theme="light"] & {
+    background-color: $bg-color-primary;
+  }
+
+  html[data-bs-theme="dark"] & {
+    background-color: $bg-color-primary-dark;
+  }
 }
 
-
 #preguntas-frecuentes-carousel {
-  background-color: $bg-color-secondary;
   border-radius: 1rem;
   -webkit-border-radius: 1rem;
   -moz-border-radius: 1rem;
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
+
+  html[data-bs-theme="light"] & {
+    background-color: $bg-color-secondary;
+  }
+
+  html[data-bs-theme="dark"] & {
+    background-color: $bg-color-secondary-dark;
+  }
 
   @include media-breakpoint-down(md) {
     padding: 5rem 0 5rem 0;

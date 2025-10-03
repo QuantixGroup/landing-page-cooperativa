@@ -1,0 +1,81 @@
+#cooperativa-info {
+  padding: 3rem 0;
+
+  html[data-bs-theme="light"] & {
+    background-color: $bg-color-primary;
+  }
+
+  html[data-bs-theme="dark"] & {
+    background-color: $bg-color-primary-dark;
+  }
+}
+
+.title-info {
+  @include font-title;
+  margin-bottom: 1.5rem;
+
+  html[data-bs-theme="light"] & {
+    color: $text-color-primary;
+  }
+
+  html[data-bs-theme="dark"] & {
+    color: $text-color-primary-dark;
+  }
+}
+
+.container-info {
+  background-color: $bg-color-secondary;
+  border-radius: 1rem;
+
+}
+
+html[data-bs-theme="dark"] .container-info {
+  background-color: $bg-color-primary-dark;
+
+}
+
+.text-content {
+  @include font-text;
+
+  html[data-bs-theme="light"] & {
+    color: $text-color-primary;
+    background-color: $bg-color-secondary;
+  }
+
+  html[data-bs-theme="dark"] & {
+    color: $text-color-tertiary-dark;
+  }
+}
+
+html[data-bs-theme="dark"] .container-info {
+  background-color: $bg-color-secondary-dark;
+}
+
+.btn-formar-parte {
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+
+  html[data-bs-theme="light"] & {
+    background-color: $bg-color-primary;
+    color: $bg-color-secondary;
+    @include button-gradient;
+  }
+
+  html[data-bs-theme="dark"] & {
+
+    background-color: $bg-color-tertiary-dark;
+    color: $text-color-secondary-dark;
+    @include button-gradient-dark;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
