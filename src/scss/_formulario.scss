@@ -128,10 +128,6 @@ label.form-label {
   box-shadow: 0 12px 36px 0 rgba(27, 73, 101, 0.28), 0 4px 16px 0 rgba(0, 0, 0, 0.18);
 }
 
-#error {
-  display: none;
-}
-
 .open-modal-text {
   cursor: pointer;
   text-decoration: underline;
@@ -178,4 +174,14 @@ label.form-label {
   html[data-bs-theme="dark"] & {
     color: $text-color-primary-dark;
   }
+}
+
+#formulario .form-control::placeholder {
+  color: $text-color-primary;
+  opacity: 1;
+}
+
+#formulario textarea::placeholder {
+  color: $text-color-secondary-dark;
+  opacity: 1;
 }

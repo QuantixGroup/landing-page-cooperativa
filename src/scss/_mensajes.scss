@@ -1,0 +1,107 @@
+#error {
+    display: none;
+}
+
+#success {
+    display: none;
+}
+
+#alertas {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    .alert {
+        position: relative !important;
+        padding: 1rem 1.25rem !important;
+        margin-bottom: 0.5rem !important;
+        border: none !important;
+        border-radius: 0.75rem !important;
+        font-family: $font-text !important;
+        font-size: 0.95rem !important;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+
+        .bi {
+            display: inline-block !important;
+            margin-right: 0.5rem !important;
+            font-size: 1.3rem !important;
+            line-height: 1 !important;
+            vertical-align: -0.125rem !important;
+        }
+    }
+
+    html[data-bs-theme="light"] & {
+        .alert-success {
+            background-color: $bg-color-success !important;
+            color: #ffffff !important;
+
+            .bi {
+                color: #ffffff !important;
+            }
+        }
+
+        .alert-danger {
+            background-color: $bg-color-danger !important;
+            color: #ffffff !important;
+
+            .bi {
+                color: #ffffff !important;
+            }
+        }
+
+        .alert-warning {
+            background-color: $bg-color-warning !important;
+            color: #212529 !important;
+
+            .bi {
+                color: #212529 !important;
+            }
+        }
+
+        .alert-info {
+            background-color: $bg-color-default !important;
+            color: #ffffff !important;
+        }
+    }
+
+    html[data-bs-theme="dark"] & {
+        .alert-success {
+            background-color: rgba($bg-color-success, 0.15) !important;
+            color: $text-color-primary-dark !important;
+
+            .bi {
+                color: $text-color-primary-dark !important;
+            }
+        }
+
+        .alert-danger {
+            background-color: $bg-color-danger !important;
+            color: $text-color-primary-dark !important;
+
+            .bi {
+                color: $text-color-primary-dark !important;
+            }
+        }
+
+        .alert-warning {
+            background-color: $bg-color-warning !important;
+            color: $text-color-primary-dark !important;
+
+            .bi {
+                color: $text-color-primary-dark !important;
+            }
+        }
+
+        .alert-info {
+            background-color: $bg-color-default !important;
+            color: $text-color-primary-dark !important;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        .alert {
+            padding: 0.8rem 1rem !important;
+            font-size: 0.9rem !important;
+            border-radius: 0.5rem !important;
+        }
+    }
+}

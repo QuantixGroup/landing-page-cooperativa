@@ -379,10 +379,27 @@ $(document).ready(function () {
         $("#datosPersonales").prop("checked", false);
       },
       error: function (xhr, textStatus, errorThrown) {
-        mostrarAlerta(
-          "No se pudo enviar la solicitud, verifique que todos los campos estén completos",
-          "danger"
-        );
+        if (textStatus === "timeout") {
+          mostrarAlerta(
+            "La solicitud está tomando más tiempo del esperado. Por favor, inténtelo nuevamente.",
+            "warning"
+          );
+        } else if (textStatus === "error" && xhr.status === 0) {
+          mostrarAlerta(
+            "Problema de conectividad detectado. Verifique su conexión a internet e inténtelo nuevamente.",
+            "warning"
+          );
+        } else if (xhr.status >= 500 && xhr.status < 600) {
+          mostrarAlerta(
+            "Error temporal del servidor. Por favor, inténtelo nuevamente en unos momentos.",
+            "warning"
+          );
+        } else {
+          mostrarAlerta(
+            "No se pudo enviar la solicitud, verifique que todos los campos estén completos",
+            "danger"
+          );
+        }
       },
       complete: function () {
         $submitBtn.prop("disabled", false);
@@ -507,39 +524,3 @@ $(document).ready(function () {
     }
   });
 });
-
-function mostrarAlerta(mensaje, tipo = "success") {
-  $("#alertas").empty();
-  let icon = "";
-  let alertClass = "";
-  switch (tipo) {
-    case "success":
-      icon = '<i class="bi bi-check-circle-fill me-2"></i>';
-      alertClass = "alert-success";
-      break;
-    case "danger":
-      icon = '<i class="bi bi-x-circle-fill me-2"></i>';
-      alertClass = "alert-danger";
-      break;
-    case "warning":
-      icon = '<i class="bi bi-exclamation-triangle-fill me-2"></i>';
-      alertClass = "alert-warning";
-      break;
-    case "info":
-      icon = '<i class="bi bi-info-circle-fill me-2"></i>';
-      alertClass = "alert-info";
-      break;
-    default:
-      icon = "";
-      alertClass = `alert-${tipo}`;
-  }
-  const alertHtml = `<div class="alert ${alertClass} fade show mt-3" role="alert">
-    ${icon}${mensaje}
-  </div>`;
-  $("#alertas").html(alertHtml);
-  $("#error").empty();
-  $("#success").empty();
-  setTimeout(() => {
-    $("#alertas .alert").alert("close");
-  }, 12000);
-}
