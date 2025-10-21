@@ -6,69 +6,56 @@ $(document).ready(function () {
     : null;
   const datosModal = datosModalEl ? new bootstrap.Modal(datosModalEl) : null;
 
-  $("#terminos")
-    .on("pointerdown", function (e) {
-      if (!$(this).is(":checked")) {
-        e.preventDefault();
-        if (terminosModal) terminosModal.show();
-      }
-    })
-    .on("keydown", function (e) {
-      const key = e.key || e.keyCode;
-      if (
-        (key === " " ||
-          key === "Spacebar" ||
-          key === 32 ||
-          key === "Enter" ||
-          key === 13) &&
-        !$(this).is(":checked")
-      ) {
-        e.preventDefault();
-        if (terminosModal) terminosModal.show();
-      }
-    });
+  function bindCheckboxModal(selector, modalInstance, modalEl) {
+    $(selector)
+      .on("pointerdown", function (e) {
+        if (!$(this).is(":checked")) {
+          e.preventDefault();
+          if (modalInstance) modalInstance.show();
+        }
+      })
+      .on("keydown", function (e) {
+        const key = e.key || e.keyCode;
+        if (
+          (key === " " ||
+            key === "Spacebar" ||
+            key === 32 ||
+            key === "Enter" ||
+            key === 13) &&
+          !$(this).is(":checked")
+        ) {
+          e.preventDefault();
+          if (modalInstance) modalInstance.show();
+        }
+      });
+  }
 
-  $("#datosPersonales")
-    .on("pointerdown", function (e) {
-      if (!$(this).is(":checked")) {
-        e.preventDefault();
-        if (datosModal) datosModal.show();
-      }
-    })
-    .on("keydown", function (e) {
-      const key = e.key || e.keyCode;
-      if (
-        (key === " " ||
-          key === "Spacebar" ||
-          key === 32 ||
-          key === "Enter" ||
-          key === 13) &&
-        !$(this).is(":checked")
-      ) {
-        e.preventDefault();
-        if (datosModal) datosModal.show();
-      }
-    });
+  bindCheckboxModal("#terminos", terminosModal, terminosModalEl);
+  bindCheckboxModal("#datosPersonales", datosModal, datosModalEl);
 
-  $(".open-modal-text").each(function () {
-    const $el = $(this);
-    const target = $el.data("target");
-    const modalEl = target ? document.querySelector(target) : null;
-    const modalInstance = modalEl ? new bootstrap.Modal(modalEl) : null;
+  function bindOpenModalText() {
+    $(".open-modal-text").each(function () {
+      const $el = $(this);
+      const target = $el.data("target");
+      const modalEl = target ? document.querySelector(target) : null;
+      const modalInstance = modalEl ? new bootstrap.Modal(modalEl) : null;
 
-    $el.on("pointerdown", function (ev) {
-      ev.preventDefault();
-      if (modalInstance) modalInstance.show();
-    });
-
-    $el.on("keydown", function (ev) {
-      const key = ev.key || ev.keyCode;
-      if (key === "Enter" || key === 13 || key === " " || key === 32) {
+      $el.on("pointerdown", function (ev) {
         ev.preventDefault();
         if (modalInstance) modalInstance.show();
-      }
+      });
+
+      $el.on("keydown", function (ev) {
+        const key = ev.key || ev.keyCode;
+        if (key === "Enter" || key === 13 || key === " " || key === 32) {
+          ev.preventDefault();
+          if (modalInstance) modalInstance.show();
+        }
+      });
     });
-  });
+  }
+
+  bindOpenModalText();
 
   $("#aceptoTerminos").on("click", function () {
     $("#terminos").prop("checked", true);
