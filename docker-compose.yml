@@ -1,0 +1,18 @@
+version: "3.8"
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: proyecto/landing-page-cooperativa:dev
+    container_name: landing_page
+    ports:
+      - "3000:80"
+    volumes:
+      - ./:/usr/share/nginx/html:ro
+    networks:
+      - frontend
+
+networks:
+  frontend:
+    driver: bridge
